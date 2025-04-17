@@ -62,7 +62,6 @@ static void draw_canvas(lv_obj_t *widget, lv_color_t cbuf[], const struct status
 
     // Draw widgets
     draw_background(canvas);
-    draw_output_status(canvas, state);
     // TODO: charging animation START
     // change the position
     draw_wpm_status(canvas, state);
