@@ -82,8 +82,8 @@ static void draw_charging_level(lv_obj_t *canvas, const struct status_state *sta
 void draw_battery_status(lv_obj_t *canvas, const struct status_state *state) {
     lv_draw_label_dsc_t label_left_dsc;
     init_label_dsc(&label_left_dsc, LVGL_FOREGROUND, &pixel_operator_mono, LV_TEXT_ALIGN_LEFT);
-    lv_canvas_draw_text(canvas, 2, 0, 25, &label_left_dsc, "MST");
-    lv_canvas_draw_text(canvas, 2, 19, 25, &label_left_dsc, "SLV");
+    lv_canvas_draw_text(canvas, 3, 0, 25, &label_left_dsc, "MST");
+    lv_canvas_draw_text(canvas, 3, 19, 25, &label_left_dsc, "SLV");
 
     if (state->charging) {
         // draw_battery_status_charging_level_big(canvas, state);
